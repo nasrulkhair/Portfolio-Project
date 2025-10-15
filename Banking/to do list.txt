@@ -1,0 +1,33 @@
+
+Task List for Jira
+
+1. BRD
+2. Functional Requiremnet Documents (FRD)
+3. Data Gatherng
+4. Data Cleaning / Transformation
+5. Data Modelling
+6. UI (power bi verw reports)
+7. DAX Functions
+8. Enhance U
+9. RLS
+10. Workspace and wworkspace access
+11. Publsh report to waorkspace
+12. Dashboard / Model View - create as an app
+13. Gateway
+14. Schedule Refresh
+15. Add roles to security
+Susbcrbe, manage alerts
+16. share reports
+
+
+# task to include
+
+1. Create database/ warehouse in snowflake
+2. build schema ( clean/ raw)
+3. upload raw data into snowflake (raw)
+4. Extract into local env ( cleaning / transformation)
+5. Data modelling (star)
+6. Load into snowflake (cleaned)
+7. EDA (SQL)
+8. Business Question (SQL)
+9. connect to power bi for reporting
