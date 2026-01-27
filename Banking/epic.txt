@@ -1,0 +1,206 @@
+🧭 FINAL PROJECT STRUCTURE — “Banking Analytics End-to-End Data Project”
+🟦 Epic 1: Business Understanding & Requirements
+
+Goal: Align business objectives with data goals.
+
+User Stories & Tasks:
+
+As a business analyst, I want to document the project objectives and KPIs so that reporting aligns with business goals.
+
+Task: Create Business Requirement Document (BRD)
+
+Task: Identify key business questions (e.g., profitability, customer segmentation)
+
+Task: Define KPIs and success metrics
+
+As a data analyst, I want to translate business needs into technical specs so that data and reports can meet requirements.
+
+Task: Create Functional Requirement Document (FRD)
+
+Task: List data sources, attributes, and owners
+
+Task: Define data refresh frequency and access levels
+
+🟩 Epic 2: Data Engineering & Warehouse Setup
+
+Goal: Build and configure Snowflake environment.
+
+User Stories & Tasks:
+
+As a data engineer, I want to set up the data warehouse to host raw and clean data layers.
+
+Task: Create database and warehouse in Snowflake
+
+Task: Create schemas (RAW, CLEAN, ANALYTICS)
+
+Task: Define naming conventions and folder structure
+
+As a data engineer, I want to load source data so that it’s available for analysis.
+
+Task: Upload raw datasets into Snowflake (RAW layer)
+
+Task: Validate row counts, data types, and load success
+
+Task: Create load history and audit tables (optional)
+
+As a data engineer, I want to extract, clean, and transform data to ensure quality and consistency.
+
+Task: Extract data to local environment (for transformation in Python or SQL)
+
+Task: Perform data cleaning (missing values, duplicates, normalization)
+
+Task: Standardize fields (date formats, currencies, categories)
+
+Task: Load cleaned data into Snowflake (CLEAN layer)
+
+As a data engineer, I want to automate data flows for reliability.
+
+Task: Configure Snowflake Tasks/Streams (optional)
+
+Task: Test incremental loads
+
+🟨 Epic 3: Data Modelling & Exploration
+
+Goal: Design the analytical model for business analysis.
+
+User Stories & Tasks:
+
+As a data modeler, I want to design a star schema so that Power BI reports can perform efficiently.
+
+Task: Identify fact and dimension tables
+
+Task: Create relationships between tables
+
+Task: Document the data model (ER diagram)
+
+As a data analyst, I want to perform exploratory analysis to understand trends and data patterns.
+
+Task: Conduct EDA in SQL / Python
+
+Task: Generate data summaries and distributions
+
+Task: Identify outliers, key segments, and potential insights
+
+As a data analyst, I want to answer core business questions using SQL.
+
+Task: Write SQL for business metrics
+
+Task: Validate business KPIs using cleaned data
+
+Task: Store reusable SQL scripts in Git for version control
+
+🟧 Epic 4: Visualization & Power BI Development
+
+Goal: Build powerful, interactive reports and dashboards.
+
+User Stories & Tasks:
+
+As a report developer, I want to connect Power BI to Snowflake so that I can visualize live data.
+
+Task: Set up Power BI connection to Snowflake
+
+Task: Test connection and authentication
+
+As a report developer, I want to create analytical reports for business stakeholders.
+
+Task: Build report pages (overview, customer, product, time)
+
+Task: Use DAX to calculate KPIs and measures
+
+Task: Apply visual design best practices
+
+Task: Enhance UI/UX (color themes, consistent layouts)
+
+As a Power BI admin, I want to set up workspace and security.
+
+Task: Create Power BI workspace
+
+Task: Manage workspace access and roles
+
+Task: Implement Row-Level Security (RLS)
+
+As a Power BI admin, I want to automate publishing and refreshes.
+
+Task: Publish report to workspace
+
+Task: Configure gateway connection
+
+Task: Schedule data refresh
+
+Task: Create dashboard app from reports
+
+Task: Add alerts, subscriptions, and sharing permissions
+
+🟥 Epic 5: Governance, Security & Monitoring
+
+Goal: Ensure data and reports comply with security, privacy, and operational standards.
+
+User Stories & Tasks:
+
+As a data owner, I want to define access policies so that sensitive data is protected.
+
+Task: Define user roles (analyst, admin, viewer)
+
+Task: Apply role-based permissions in Snowflake
+
+Task: Enable data masking or restricted views (if applicable)
+
+As a BI admin, I want to monitor system and report usage.
+
+Task: Configure Power BI usage metrics
+
+Task: Track refresh performance and failures
+
+Task: Log data pipeline execution stats
+
+🟪 Epic 6: Documentation, Testing & Deployment
+
+Goal: Ensure the project is validated, traceable, and production-ready.
+
+User Stories & Tasks:
+
+As a QA analyst, I want to test all components to ensure data accuracy and performance.
+
+Task: Validate data integrity (row counts, null checks)
+
+Task: Test SQL queries and DAX calculations
+
+Task: Validate RLS works correctly
+
+As a project owner, I want to document the full data flow for transparency and knowledge sharing.
+
+Task: Document ETL process flow
+
+Task: Create ER diagram and data dictionary
+
+Task: Write README or Confluence documentation
+
+Task: Create deployment guide (Snowflake + Power BI)
+
+As a project owner, I want to finalize the project presentation for portfolio or stakeholder review.
+
+Task: Prepare presentation slides (business context, flow, results)
+
+Task: Record demo video or walkthrough (optional)
+
+Task: Store final files in GitHub for portfolio showcase
+
+🟫 Epic 7: Automation, CI/CD & Continuous Improvement (Optional but adds huge value)
+
+Goal: Automate deployment and improve development workflow.
+
+User Stories & Tasks:
+
+As a data engineer, I want to manage code versions for traceability.
+
+Task: Create Git repository for SQL, Python, and DAX scripts
+
+Task: Commit code with version history
+
+As a DevOps engineer, I want to automate deployment to reduce manual effort.
+
+Task: Create CI/CD pipeline (optional using GitHub Actions or dbt Cloud)
+
+Task: Automate Snowflake SQL runs or Power BI refresh triggers
+
+Task: Test CI/CD pipeline execution logs
